@@ -63,8 +63,17 @@
         #team .members li.member .details .location {
           font-weight: 100;
           color: #808080; }
-      #team .members li.member .mail {
-        position: relative;
+      #team .members li.member a {
         display: block;
-        height: 50px;
-        width: 50px; }
+        position: relative;
+        left: 75%;
+        top: 15%; }
+        #team .members li.member a .email {
+          height: 40px;
+          width: 40px;
+          border-radius: 50%;
+          background-color: #452e76;
+          z-index: 2; }
+          #team .members li.member a .email img {
+            width: 20px;
+            height: 100%; }

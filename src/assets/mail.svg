@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 15" width="20" height="15">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #ffffff } 
+	</style>
+	<path id="Mail closed" class="shp0" d="M19 3C19 2.44 18.52 2 17.94 2L3.06 2C2.48 2 2 2.44 2 3L10.5 9.5L19 3ZM2 4.5L2 13C2 13.55 2.48 14 3.06 14L17.94 14C18.52 14 19 13.55 19 13L19 4.48L10.5 11L2 4.5Z" />
+</svg>

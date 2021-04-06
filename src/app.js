@@ -3,8 +3,11 @@ import team from './data/team.js';
 const teamEl = document.querySelector('.members');
 
 
-const toRender = team.map(({ firstName, lastName, role, location }) => `
+const toRender = team.map(({ firstName, lastName, role, location }) => {
+  let mailAddr = `${firstName.toLowerCase()}.${lastName.toLowerCase()}@indahash.com`;
+  return `
   <li class="member">
+  <a href="mailto:${mailAddr}"><div class="email"><img src="./assets/mail.svg"></div></a>
   <img
     src="https://source.unsplash.com/random/200x200"
     alt="avatar"
@@ -14,9 +17,9 @@ const toRender = team.map(({ firstName, lastName, role, location }) => `
     <span class="role">${role}</span>
     <span class="location">${location}</span>
   </div>
-  <a href="#"><span></span></a>
+ 
 </li>
-  `).join('');
+  `}).join('');
 
 teamEl.innerHTML = toRender;
 
