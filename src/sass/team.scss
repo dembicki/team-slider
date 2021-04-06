@@ -3,7 +3,7 @@
 #team {
   text-align: center;
   width: 1230px;
-  height: 703px;
+  height: 100%;
   margin: 0 auto;
 
   &:before {
@@ -35,9 +35,17 @@
     li.member {
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      justify-content: flex-start;
       width: 180px;
       padding: 15px 0px;
+      transform: scale(1);
+      transition: transform 0.3s ease-in-out;
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+        transition: transform 0.3s ease-in-out;
+      }
+
       img {
         border-radius: 50%;
         width: 180px;
@@ -48,7 +56,6 @@
         margin-top: 30px;
         margin-bottom: 21px;
         color: $purple;
-
         font-weight: 400;
         font-size: 20px;
       }
@@ -59,7 +66,6 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
-        border: 1px soid red;
         font-size: 14px;
         font-weight: 300;
         .role {

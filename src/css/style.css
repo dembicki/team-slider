@@ -1,7 +1,7 @@
 #team {
   text-align: center;
   width: 1230px;
-  height: 703px;
+  height: 100%;
   margin: 0 auto; }
   #team:before {
     content: "";
@@ -27,9 +27,15 @@
     #team .members li.member {
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      justify-content: flex-start;
       width: 180px;
-      padding: 15px 0px; }
+      padding: 15px 0px;
+      transform: scale(1);
+      transition: transform 0.3s ease-in-out; }
+      #team .members li.member:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+        transition: transform 0.3s ease-in-out; }
       #team .members li.member img {
         border-radius: 50%;
         width: 180px;
@@ -46,7 +52,6 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
-        border: 1px soid red;
         font-size: 14px;
         font-weight: 300; }
         #team .members li.member .details .role {
@@ -77,3 +82,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: OpenSans, sans-serif; }
+
+.slider {
+  background-color: white !important;
+  border: 1px solid red; }
