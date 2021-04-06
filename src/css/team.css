@@ -71,9 +71,3 @@
           #team .members li.member a .email img {
             width: 20px;
             height: 100%; }
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: OpenSans, sans-serif; }
