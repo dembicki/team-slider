@@ -1,11 +1,11 @@
 # team-slider
 
-## Tech stack used:
+## 🔥 Tech stack used:
 
-- JS (ES6)
-- GULP
-- SASS
-- SWIPER
+- Javascript (ES6)
+- Gulp
+- Sass
+- Swiper.js
 
 ## Getting started
 
