@@ -89,7 +89,6 @@ const team = [
     imageURL: './assets/person5.png',
     email: '',
   },
-
 ];
 
 export default team;

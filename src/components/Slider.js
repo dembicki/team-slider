@@ -1,4 +1,4 @@
-import team from '../data/team.js';
+import team from '../data/teamData.js';
 import 'https://unpkg.com/swiper/swiper-bundle.min.js';
 
 const toggleSlider = (input) => {
@@ -10,13 +10,13 @@ const toggleSlider = (input) => {
 const initSlider = () => {
   const swiperWrapperEl = document.querySelector('.swiper-wrapper');
 
-  const toRender = team
-    .map(({ firstName, lastName, role }) => `
-    <div class="swiper-slide">
-      <span>${role}</span>
-      <h2>${firstName} ${lastName}</h2>
-    </div>
-      `).join('');
+  const toRender =
+    team.map(({ firstName, lastName, role }) => `
+      <div class="swiper-slide">
+        <span>${role}</span>
+        <h2>${firstName} ${lastName}</h2>
+      </div>
+    `).join('');
 
   swiperWrapperEl.innerHTML = toRender;
 
