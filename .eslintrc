@@ -17,6 +17,7 @@
     },
     "rules": {
         "quotes": 1,
-        "semi": 1
+        "semi": 1,
+        "import/extensions": 0,
     },
 }
