@@ -21,6 +21,7 @@ Edit team members info in `/data/team.js` file.
 
 ```js
 {
+    id: 1,
     firstName: 'Basia',
     lastName: 'Sołtysińska',
     role: 'Founder',
