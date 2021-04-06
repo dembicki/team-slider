@@ -10,9 +10,7 @@ gulp.task('sass', () => gulp.src('src/sass/**/*.scss')
 
 gulp.task('lint', () => gulp.src('src/**/*.js').pipe(eslint({}))
     .pipe(eslint.format())
-    // Brick on failure to be super strict
     .pipe(eslint.failOnError()));
-
 
 gulp.task('watch', () => {
     gulp.watch('src/sass/**/*.scss', gulp.series('sass'));

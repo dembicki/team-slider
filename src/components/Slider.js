@@ -23,6 +23,7 @@ const initSlider = () => {
   const swiper = new Swiper('.swiper-container', {
     loop: true,
     speed: 800,
+    slidesPerView: 1,
     keyboard: {
       enabled: true,
       onlyInViewport: true,

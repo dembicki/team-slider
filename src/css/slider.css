@@ -3,6 +3,9 @@
   height: 960px;
   width: 100%;
   transition: height 1s ease-in-out; }
+  @media only screen and (max-width: 600px) {
+    .slider {
+      height: 50vh; } }
 
 .hidden {
   height: 0px; }
@@ -16,12 +19,18 @@
   font-weight: 900;
   color: white !important;
   transform: scale(1.2); }
+  @media only screen and (max-width: 600px) {
+    .swiper-button-next {
+      display: none !important; } }
 
 .swiper-button-prev {
   left: 50px !important;
   font-weight: 900;
   color: white !important;
   transform: scale(1.2); }
+  @media only screen and (max-width: 600px) {
+    .swiper-button-prev {
+      display: none !important; } }
 
 .swiper-slide {
   text-align: center;
@@ -38,17 +47,25 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   -webkit-align-items: center;
+  background-position: center !important;
+  background-size: cover !important;
   background: url("../assets/slider_bg.jpg"); }
   .swiper-slide h2 {
     font-size: 90px;
     font-weight: 600;
     color: white;
     filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.45)); }
+    @media only screen and (max-width: 600px) {
+      .swiper-slide h2 {
+        font-size: 40px; } }
   .swiper-slide span {
     font-size: 50px;
     font-weight: 300;
     color: white;
     filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.45)); }
+    @media only screen and (max-width: 600px) {
+      .swiper-slide span {
+        font-size: 20px; } }
   .swiper-slide::after {
     content: "";
     position: absolute;
@@ -60,6 +77,11 @@
     background-repeat: no-repeat;
     height: 375px;
     width: 1100px; }
+    @media only screen and (max-width: 600px) {
+      .swiper-slide::after {
+        height: 200px;
+        width: 340px;
+        background-size: 100% 100%; } }
 
 .swiper-button-close {
   height: 40px;
@@ -76,3 +98,8 @@
   padding: 40px; }
   .swiper-button-close:hover {
     cursor: pointer; }
+  @media only screen and (max-width: 600px) {
+    .swiper-button-close {
+      top: 5px;
+      right: 5px;
+      transform: scale(0.8); } }
