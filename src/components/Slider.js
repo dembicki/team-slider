@@ -1,4 +1,5 @@
 import team from '../data/teamData.js';
+import { scrollTo } from '../utils/utils.js';
 
 const toggleSlider = (input) => {
   const header = document.querySelector('.slider');
@@ -41,6 +42,7 @@ const initSlider = () => {
     member.addEventListener('click', (e) => {
       swiper.slideTo(e.currentTarget.dataset.id, 800, true);
       toggleSlider(true);
+      scrollTo(0, 1000);
     });
   });
 

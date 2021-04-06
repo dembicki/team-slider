@@ -17,3 +17,27 @@ export const removeSpecialChars = (str) => str
   .replace(/Ż/g, 'Z')
   .replace(/ź/g, 'z')
   .replace(/Ź/g, 'Z');
+
+export const scrollTo = (to, duration) => {
+  const el = document.scrollingElement || document.documentElement;
+  const start = el.scrollTop;
+  const change = to - start;
+  const startTs = performance.now();
+  const easeInOutQuad = (t, b, c, d) => {
+    t /= d / 2;
+    if (t < 1) return c / 2 * t * t + b;
+    t -= 1;
+    return -c / 2 * (t * (t - 2) - 1) + b;
+  };
+  const animateScroll = (ts) => {
+    const currentTime = ts - startTs;
+    el.scrollTop = parseInt(easeInOutQuad(currentTime, start, change, duration));
+    if (currentTime < duration) {
+      requestAnimationFrame(animateScroll);
+    }
+    else {
+      el.scrollTop = to;
+    }
+  };
+  requestAnimationFrame(animateScroll);
+};
