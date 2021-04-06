@@ -1,5 +1,4 @@
 import team from '../data/teamData.js';
-import 'https://unpkg.com/swiper/swiper-bundle.min.js';
 
 const toggleSlider = (input) => {
   const header = document.querySelector('.slider');
@@ -18,9 +17,9 @@ const initSlider = () => {
       </div>
     `).join('');
 
+  // render slide elements
   swiperWrapperEl.innerHTML = toRender;
 
-  // eslint-disable-next-line no-unused-vars
   const swiper = new Swiper('.swiper-container', {
     loop: true,
     speed: 800,
@@ -40,7 +39,6 @@ const initSlider = () => {
   members.forEach(member => {
     member.addEventListener('click', (e) => {
       swiper.slideTo(e.currentTarget.dataset.id, 800, true);
-      window.scrollTo(0, 0);
       toggleSlider(true);
     });
   });
