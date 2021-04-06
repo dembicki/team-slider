@@ -1,5 +1,6 @@
 import team from '../data/team.js';
 
+
 const removeSpecialChars = (str) => {
   return str
     .replace(/ą/g, 'a')
@@ -27,10 +28,10 @@ const renderTeam = () => {
   const teamEl = document.querySelector('.members');
 
   const toRender = team
-    .map(({ firstName, lastName, role, location, imageURL, email }) => {
+    .map(({ firstName, lastName, role, location, imageURL, email, id }) => {
       const mail = `${removeSpecialChars(firstName).toLowerCase()}.${removeSpecialChars(lastName).toLowerCase()}@indahash.com`;
       return `
-    <li class="member">
+    <li class="member" data-id="${id}">
       <a href="mailto:${mail}">
         <div class="email">
           <img src="./assets/mail.svg">
@@ -52,5 +53,8 @@ const renderTeam = () => {
   // render items
   teamEl.innerHTML = toRender;
 };
+
+
+
 
 export default renderTeam;

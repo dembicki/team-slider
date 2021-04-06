@@ -1,5 +1,6 @@
 const team = [
   {
+    id: 1,
     firstName: 'Basia',
     lastName: 'Sołtysińska',
     role: 'Founder',
@@ -8,6 +9,7 @@ const team = [
     email: '',
   },
   {
+    id: 2,
     firstName: 'Włas',
     lastName: 'Chorowiec',
     role: 'Founder',
@@ -16,6 +18,7 @@ const team = [
     email: '',
   },
   {
+    id: 3,
     firstName: 'Edyta',
     lastName: 'Leśniewska',
     role: 'Head of Human Resources',
@@ -24,6 +27,7 @@ const team = [
     email: '',
   },
   {
+    id: 4,
     firstName: 'Joanna',
     lastName: 'Pawluk',
     role: 'Chief Growth Officer (CGO)',
@@ -32,6 +36,7 @@ const team = [
     email: '',
   },
   {
+    id: 5,
     firstName: 'David',
     lastName: 'Sounders',
     role: 'Business Development',
@@ -40,6 +45,7 @@ const team = [
     email: '',
   },
   {
+    id: 6,
     firstName: 'Adam',
     lastName: 'Eldridge',
     role: 'Business Development Director US',
@@ -48,6 +54,7 @@ const team = [
     email: '',
   },
   {
+    id: 7,
     firstName: 'Maha',
     lastName: 'Mahda',
     role: 'Chief Business Development Officer (CBDO)',
@@ -56,6 +63,7 @@ const team = [
     email: '',
   },
   {
+    id: 8,
     firstName: 'Elżbieta',
     lastName: 'Kamińska',
     role: 'International Client Service Manager',
@@ -64,6 +72,7 @@ const team = [
     email: '',
   },
   {
+    id: 9,
     firstName: 'Karolina',
     lastName: 'Makuch',
     role: 'Creation Manager',
@@ -72,6 +81,7 @@ const team = [
     email: '',
   },
   {
+    id: 10,
     firstName: 'Kamil',
     lastName: 'Bolek',
     role: 'Head of Comunication',
