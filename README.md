@@ -1,5 +1,13 @@
 # team-slider
 
+## 🍏 Features:
+
+- Responsive design
+- Animated, touch response slider
+- Smooth transitions
+- Hidden slider on close button
+- Automatic email links
+
 ## 🔥 Tech stack used:
 
 - Javascript (ES6)
