@@ -66,8 +66,9 @@
           font-weight: 100;
           color: #808080; }
       #team .members .member a {
-        display: block;
+        margin: 0;
         position: relative;
+        width: 40px;
         left: 75%;
         top: 15%; }
         #team .members .member a .email {
@@ -99,6 +100,7 @@
   height: 100%; }
 
 .swiper-button-next {
+  outline: none;
   right: 50px !important;
   font-weight: 900;
   color: white !important;
@@ -108,6 +110,7 @@
       display: none !important; } }
 
 .swiper-button-prev {
+  outline: none;
   left: 50px !important;
   font-weight: 900;
   color: white !important;
@@ -168,6 +171,7 @@
         background-size: 100% 100%; } }
 
 .swiper-button-close {
+  outline: none;
   height: 40px;
   width: 40px;
   position: absolute;

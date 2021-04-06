@@ -82,8 +82,9 @@
         }
       }
       a {
-        display: block;
+        margin: 0;
         position: relative;
+        width: 40px;
         left: 75%;
         top: 15%;
         .email {
