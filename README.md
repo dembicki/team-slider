@@ -32,3 +32,11 @@ Edit team members info in `/data/team.js` file.
 ```
 
 You can specify the email, if not the default email will be `firstName.lastName@indahash.com`
+
+## Run locally
+
+You can test this out by running simple http server in src folder eg.
+
+```bash
+python -m SimpleHTTPServer
+```
